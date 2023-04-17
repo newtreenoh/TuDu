@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="container">
+            <h1>Today</h1>
+            <form action="" id="TuDuForm">
+                <input type="text" name="taskName" placeholder="E.g. Write a TuDu list!">
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+    </header>
+
+    <section>
+        <div class="container" id="mainContent">
+            <ul class="stats">
+                <li>
+                    <span>Remaining</span>
+                    <span id="remainingTasks">0</span>
+                </li>
+                <li>
+                    <span>Completed</span>
+                    <span id="completedTasks">0</span>
+                </li>
+                <li>
+                    <span>Total</span>
+                    <span id="totalTasks">0</span>
+                </li>
+            </ul>
+
+            <ul class="TuDus">
+                <li>
+                    <div>
+                        <input type="checkbox" name="tasks" id="1">
+                        <span>Task 1</span>
+                    </div>
+                    <button title="removeTask" class="removeTask">
+                        X
+                    </button>
+                </li>
+                <li>
+                    <div>
+                        <input type="checkbox" name="tasks" id="2">
+                        <span>Task 2</span>
+                    </div>
+                    <button title="removeTask" class="removeTask">
+                        X
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="container">
+        <p>Created by Newtreenoh</p>
+    </footer>
+</body>
+</html>
