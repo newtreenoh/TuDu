@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header id="mainHeader">
-        <div class="container">
+        <div class="containerHeader">
             <h1>Today</h1>
             <form action="" id="TuDuForm">
-                <input type="text" name="taskName" placeholder="E.g. Write a TuDu list!">
-                <button type="submit">Add Task</button>
+                <input type="text" name="taskName" placeholder="E.g. Write a TuDu list!" class="addTask" id="addTask">
+                <button type="submit" class="btnSubmit" id="btnSubmit">Add Task</button>
             </form>
         </div>
     </header>
 
     <section>
-        <div class="container" id="mainContent">
+        <div class="containerBody" id="mainContent">
             <ul class="stats">
                 <li>
                     <span>Remaining</span>
@@ -38,26 +39,26 @@
                 <li>
                     <div>
                         <input type="checkbox" name="tasks" id="1">
-                        <span>Task 1</span>
+                        <span contenteditable>Task 1</span>
                     </div>
                     <button title="removeTask" class="removeTask">
-                        X
+                        ✖️
                     </button>
                 </li>
-                <li>
+                <li class="complete">
                     <div>
                         <input type="checkbox" name="tasks" id="2">
                         <span>Task 2</span>
                     </div>
                     <button title="removeTask" class="removeTask">
-                        X
+                        ✖️
                     </button>
                 </li>
             </ul>
         </div>
     </section>
 
-    <footer class="container">
+    <footer class="containerFooter">
         <p>Created by Newtreenoh</p>
     </footer>
 </body>

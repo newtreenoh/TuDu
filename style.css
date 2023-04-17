@@ -1,0 +1,114 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+.containerHeader, .containerBody, .containerFooter{
+    width: 70%;
+    margin: auto;
+    place-content: center;
+}
+
+#mainHeader{    
+    background-color: rgb(131, 4, 250);
+    padding: 20px;    
+}
+
+.containerHeader{
+    padding: 5%;
+}
+
+.addTask, .btnSubmit{
+    border-radius: 7px;
+    padding: 2%;
+}
+
+.btnSubmit{
+    background-color: white;
+    border: none;
+    color: rgb(131, 4, 250);
+}
+
+#TuDuForm{
+        transition: all .3s ease-in-out;
+}
+
+.TuDus{
+    margin-bottom: 7rem;
+}
+
+.TuDus li{
+    background-color: white;
+    border-radius: 7px;
+    margin-bottom: 2rem;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TuDus li div{
+    display: flex;
+    align-items: center;
+    gap: .50rem;
+}
+
+.TuDus li.complete{
+    background-color: lightgreen;
+    text-decoration: line-through;
+}
+
+input[type='checkbox']{
+    /* Resetting the checkbox style */
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+
+    /* Adding style */
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid;
+    border-radius: 7px;
+    display: grid;
+    place-content: center;
+    transition: all .3s ease-in-out;
+}
+
+input[type='checkbox']::before{
+    content: '✔️';
+    transform: scale(0);
+    transition: all .3s ease-in-out;
+}
+
+input[type='checkbox']:checked{
+    background-color: white;
+    border-color:  gray;
+}
+
+input[type='checkbox']:checked::before{
+    transform: scale(1);
+}
+
+.TuDus li button{
+    border: 0;
+    padding: .50rem;
+    display: grid;
+    place-content: center;
+    background-color: black;
+    border-radius: 7px;
+}
+
+.TuDus li span{
+    padding: 20px;
+    border-radius: 7px;
+    transition: all .3s ease-in-out;
+}
+
+.TuDus li span:focus{
+    background-color: rgb(240, 240, 240);
+    outline: none;
+}
+
+.TuDus li span[contenteditable]:hover{
+    background-color: rgb(240, 240, 240);
+}
