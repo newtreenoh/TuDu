@@ -1,9 +1,13 @@
 body{
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     margin: 0;
 }
 
-.containerHeader, .containerBody, .containerFooter{
+#headerTitle{
+    color: white;    
+    font-size: 50px;
+}
+
+.containerBody, .containerFooter{
     width: 70%;
     margin: auto;
     place-content: center;
@@ -11,7 +15,8 @@ body{
 
 #mainHeader{    
     background-color: rgb(131, 4, 250);
-    padding: 20px;    
+    padding: 20px;   
+    text-align: center;
 }
 
 .containerHeader{
