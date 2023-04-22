@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #headerTitle{
@@ -28,10 +29,15 @@ body{
     padding: 2%;
 }
 
+.addTask{
+    width: 50%;
+}
+
 .btnSubmit{
     background-color: white;
     border: none;
     color: rgb(131, 4, 250);
+    font-weight: bolder;
 }
 
 #TuDuForm{
