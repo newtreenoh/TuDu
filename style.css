@@ -100,13 +100,16 @@ input[type='checkbox']:checked::before{
     transform: scale(1);
 }
 
-.TuDus li button{
+.removeTask{
     border: 0;
-    padding: .50rem;
+    padding: 15px 20px;
     display: grid;
     place-content: center;
-    background-color: black;
+    background-color: rgb(131, 4, 250);
     border-radius: 7px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .TuDus li span{

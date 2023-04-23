@@ -24,7 +24,7 @@ function createTuDu(){
             <li>
                 <div>
                     <input type="checkbox" name="tasks" id="1">
-                    <span>addTask.value</span>
+                    <span>` + addTask.value + `</span>
                 </div>
                 <button title="removeTask" class="removeTask">
                     X
