@@ -1,128 +1,55 @@
 body{
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-#headerTitle{
-    color: white;    
-    font-size: 50px;
-}
-
-.containerBody, .containerFooter{
-    width: 70%;
-    margin: auto;
-    place-content: center;
-}
-
-#mainHeader{    
-    background-color: rgb(131, 4, 250);
-    padding: 20px;   
-    text-align: center;
-}
-
-.containerHeader{
-    padding: 5%;
-}
-
-.addTask, .btnSubmit{
-    border-radius: 7px;
-    padding: 2%;
-}
-
-.addTask{
-    width: 50%;
-}
-
-.btnSubmit{
-    background-color: white;
-    border: none;
-    color: rgb(131, 4, 250);
-    font-weight: bolder;
-}
-
-#TuDuForm{
-        transition: all .3s ease-in-out;
-}
-
-.TuDus{
-    margin-bottom: 7rem;
-}
-
-.TuDus li{
-    background-color: white;
-    border-radius: 7px;
-    margin-bottom: 2rem;
-    padding: 1.5rem 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.TuDus li div{
-    display: flex;
-    align-items: center;
-    gap: .50rem;
-}
-
-.TuDus li.complete{
-    background-color: lightgreen;
-    text-decoration: line-through;
-}
-
-input[type='checkbox']{
-    /* Resetting the checkbox style */
-    appearance: none;
-    background-color: transparent;
     margin: 0;
-
-    /* Adding style */
-    width: 2rem;
-    height: 2rem;
-    border: 2px solid;
-    border-radius: 7px;
-    display: grid;
-    place-content: center;
-    transition: all .3s ease-in-out;
 }
 
-input[type='checkbox']::before{
-    content: '✔️';
-    transform: scale(0);
-    transition: all .3s ease-in-out;
-}
-
-input[type='checkbox']:checked{
-    background-color: white;
-    border-color:  gray;
-}
-
-input[type='checkbox']:checked::before{
-    transform: scale(1);
-}
-
-.removeTask{
-    border: 0;
-    padding: 15px 20px;
-    display: grid;
-    place-content: center;
+.tuDuHeader{
+    text-align: center;
+    padding: 100px;
     background-color: rgb(131, 4, 250);
-    border-radius: 7px;
+}
+
+.title{
+    font-size: 100px;
     color: white;
-    font-size: 20px;
     font-weight: bold;
 }
 
-.TuDus li span{
+.addTuDuText, .btnAddTask{
     padding: 20px;
     border-radius: 7px;
-    transition: all .3s ease-in-out;
+    border: none;
+    font-size: 20px;
 }
 
-.TuDus li span:focus{
-    background-color: rgb(240, 240, 240);
-    outline: none;
+.addTuDuText{
+    width: 50%;
+}
+.btnAddTask{
+    color: rgb(131, 4, 250);
+    font-weight: bold;
 }
 
-.TuDus li span[contenteditable]:hover{
-    background-color: rgb(240, 240, 240);
+.tuDuContent{
+    width: 50%;
+    text-align: center;
+    padding: 2%;
+    border-style: solid;border-color: aqua;
+    background-color: black;
 }
+
+#tuDuCheckbox, .taskText, .btnDelete{
+    display: inline-flex;
+    background-color: white;
+    padding: 1%;
+}
+
+.btnDelete{
+    padding: 1.5% 2%;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(131, 4, 250);
+    color: white;
+    font-size: 20px;
+}
+
