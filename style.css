@@ -30,12 +30,14 @@ body{
     font-weight: bold;
 }
 
+.tuDuBody{
+    display: flex;
+    justify-content: center;
+}
+
 .tuDuContent{
     width: 50%;
-    text-align: center;
     padding: 2%;
-    border-style: solid;border-color: aqua;
-    background-color: black;
 }
 
 #tuDuCheckbox, .taskText, .btnDelete{
