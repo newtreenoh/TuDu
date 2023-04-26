@@ -1,6 +1,6 @@
 # TuDu
 <p align="center">
-  <img src="https://cdn.shopify.com/s/files/1/1325/3287/collections/pink-panther.png?v=1657551666&width=600" width="350" alt="accessibility text">
+  <img src="https://seeklogo.com/images/P/Pink_Panther-logo-309B8AC122-seeklogo.com.png" width="350" alt="PinkPantherIcon">
 </p>
 TuDu. TuDu. TuDu...TuDu...TuDu...TuDu, TuDuuu, TuDuTu.
 
