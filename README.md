@@ -1,4 +1,7 @@
 # TuDu
+<p align="center">
+  <img src="https://cdn.shopify.com/s/files/1/1325/3287/collections/pink-panther.png?v=1657551666&width=600" width="350" alt="accessibility text">
+</p>
 TuDu. TuDu. TuDu...TuDu...TuDu...TuDu, TuDuuu, TuDuTu.
 
 ## Intro
