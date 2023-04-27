@@ -1,39 +1,29 @@
 // DOM elements
-const TuDuForm       = document.getElementById('TuDuForm');
-const TuDuList       = document.querySelector('.TuDus');
+const btnAddTask = document.getElementById('btnAddTask');
 
-const remainingTasks = document.getElementById('remainingTasks');
-const completedTasks = document.getElementById('completedTasks');
-const totalTasks     = document.getElementById('totalTasks');
-
-const addTask        = document.getElementById('addTask');
-const btnSubmit      = document.getElementById('btnSubmit');
+const tuDuContent = document.getElementById('tuDuContent')
 
 // Event Listeners
-btnSubmit.addEventListener('click', createTuDu);
+btnAddTask.addEventListener('click', addTuDu);
 
 // Functions
-function createTuDu(){
+function addTuDu(){
     try {
-        if(addTask.value != ''){
+        if(addTuDuText.value != ''){
             const div = document.createElement('div');
     
             div.className = 'tuDuTask';
     
             div.innerHTML = `
-            <li>
-                <div>
-                    <input type="checkbox" name="tasks" id="1">
-                    <span>` + addTask.value + `</span>
-                </div>
-                <button title="removeTask" class="removeTask">
-                    X
-                </button>
-            </li>
+            <div class="tuDuTask" id="tuDuTask">
+                <input type="checkbox" name="" id="tuDuCheckbox">
+                <p class="taskText" id="taskText">` + addTuDuText.value + `</p>
+                <button class="btnDelete" id="btnDelete">X</button>
+            </div>
             `;
     
-            TuDuList.appendChild(div);
-            addTask.value = '';         // reset input field to empty for next use
+            tuDuContent.appendChild(div);
+            addTuDuText.value = '';         // reset input field to empty for next use
         }else {
             alert('Please add a TuDu to add.')
         }
