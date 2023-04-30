@@ -41,17 +41,27 @@ body{
 }
 
 #tuDuCheckbox, .taskText, .btnDelete{
-    display: inline-flex;
+    /* display: inline-flex;
     background-color: white;
-    padding: 1%;
+    padding: 1%; */
 }
 
 .btnDelete{
-    padding: 1.5% 2%;
-    border: none;
-    border-radius: 7px;
+    border: 0;
+    padding: 15px 20px;
+    place-content: center;
     background-color: rgb(131, 4, 250);
+    border-radius: 7px;
     color: white;
     font-size: 20px;
+    font-weight: bold;
 }
 
+.tuDuContent li{
+    background-color: white;
+    list-style: none;
+    border-radius: 7px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
